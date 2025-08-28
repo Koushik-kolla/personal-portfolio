@@ -72,4 +72,36 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // Skills/Education toggle
+  document.getElementById('skillsToggle')?.addEventListener('click', function() {
+    document.getElementById('skillsSection').style.display = 'block';
+    document.getElementById('educationSection').style.display = 'none';
+    this.classList.add('bg-blue-500', 'text-white');
+    document.getElementById('educationToggle').classList.remove('bg-blue-500', 'text-white');
+    document.getElementById('educationToggle').classList.add('bg-gray-200', 'text-blue-500');
+  });
+  document.getElementById('educationToggle')?.addEventListener('click', function() {
+    document.getElementById('skillsSection').style.display = 'none';
+    document.getElementById('educationSection').style.display = 'block';
+    this.classList.add('bg-blue-500', 'text-white');
+    document.getElementById('skillsToggle').classList.remove('bg-blue-500', 'text-white');
+    document.getElementById('skillsToggle').classList.add('bg-gray-200', 'text-blue-500');
+  });
+
+  // Project filter toggle
+  document.querySelectorAll('.project-filter').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.project-filter').forEach(b => b.classList.remove('bg-blue-500', 'text-white'));
+      this.classList.add('bg-blue-500', 'text-white');
+      const filter = this.getAttribute('data-filter');
+      document.querySelectorAll('#projectGrid > div').forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
 });

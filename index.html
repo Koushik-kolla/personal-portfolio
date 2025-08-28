@@ -50,17 +50,19 @@
         <div class="md:w-2/3 md:pl-12">
           <h3 class="text-2xl font-semibold mb-4">Professional Summary</h3>
           <p class="text-gray-600 mb-6">I'm a passionate web developer with 2 years of experience creating modern, responsive websites and applications. I specialize in front-end development using React and Vue.js, with strong back-end skills in Node.js.</p>
-          <div class="grid grid-cols-2 gap-4">
-            <div>
-              <h4 class="font-semibold mb-2">Skills</h4>
+          <div class="mb-6">
+            <div class="flex gap-4 mb-4">
+              <button id="skillsToggle" class="px-4 py-2 bg-blue-500 text-white rounded-lg">Skills</button>
+              <button id="educationToggle" class="px-4 py-2 bg-gray-200 text-blue-500 rounded-lg">Education</button>
+            </div>
+            <div id="skillsSection">
               <ul class="space-y-2">
                 <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> HTML/CSS/JavaScript</li>
                 <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Python & MySQL</li>
                 <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Linux</li>
               </ul>
             </div>
-            <div>
-              <h4 class="font-semibold mb-2">Education</h4>
+            <div id="educationSection" style="display:none;">
               <p class="text-gray-600">Computer Science Engineering<br> KL University, 2022-2026</p>
             </div>
           </div>
@@ -73,9 +75,15 @@
   <section id="portfolio" class="py-20">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">My Work</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="flex justify-center space-x-4 mb-8">
+        <button class="project-filter px-4 py-2 bg-blue-500 text-white rounded-lg" data-filter="all">All</button>
+        <button class="project-filter px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg" data-filter="web">Web Design</button>
+        <button class="project-filter px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg" data-filter="dev">Development</button>
+        <button class="project-filter px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg" data-filter="mobile">Mobile Apps</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectGrid">
         <!-- Project 1 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="web dev">
           <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="E-commerce Website Project Screenshot" loading="lazy" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
@@ -84,7 +92,7 @@
           </div>
         </div>
         <!-- Project 2 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="dev">
           <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg" alt="Task Management App Project Screenshot" loading="lazy" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
@@ -93,7 +101,7 @@
           </div>
         </div>
         <!-- Project 3 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="web">
           <img src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg" alt="Portfolio Template Project Screenshot" loading="lazy" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Portfolio Template</h3>
