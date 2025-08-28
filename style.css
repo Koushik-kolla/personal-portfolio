@@ -1,0 +1,49 @@
+/* Custom scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero overlay for index.html */
+.hero-overlay {
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+}
+.bg-hero {
+  background-image: url('https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg');
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181818;
+  color: #f1f1f1;
+}
+body.dark-mode nav,
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer {
+  background: #222;
+  color: #f1f1f1;
+}
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode button {
+  background: #333;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Testimonials */
+#testimonials .bg-white {
+  transition: box-shadow 0.3s;
+}
+#testimonials .bg-white:hover {
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15);
+}
+
+/* ...add any other custom styles as needed... */

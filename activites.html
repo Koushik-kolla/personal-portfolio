@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracurricular Activities | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .activity-card {
+            transition: all 0.3s ease;
+        }
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 2.5rem;
+            height: calc(100% - 2.5rem);
+            width: 2px;
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Portfolio</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Home</a>
+                <a href="about.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">About</a>
+                <a href="portfolio.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Portfolio</a>
+                <a href="certifications.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Certifications</a>
+                <a href="#" class="px-3 py-2 text-blue-500 font-medium">Activities</a>
+                <a href="contact.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Beyond Work</h1>
+            <p class="text-xl text-gray-600">Leadership, Volunteering, and Personal Interests</p>
+        </div>
+    </section>
+
+    <!-- Activities Sections -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <!-- Leadership Section -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-center mb-12">Leadership Roles</h2>
+                <div class="max-w-3xl mx-auto relative">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative pl-12 pb-12 timeline-item">
+                        <div class="absolute left-0 top-0 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-sm text-blue-500">2022 - Present</span>
+                            <h3 class="text-xl font-semibold">Tech Community Lead</h3>
+                            <p class="text-gray-600">Developer Circles by Facebook</p>
+                        </div>
+                        <p class="text-gray-600">
+                            Organize monthly meetups and hackathons for 500+ local developers. Lead workshops on modern web technologies and mentor junior members.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative pl-12 pb-12 timeline-item">
+                        <div class="absolute left-0 top-0 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-sm text-blue-500">2021 - 2022</span>
+                            <h3 class="text-xl font-semibold">Student Chapter President</h3>
+                            <p class="text-gray-600">ACM Student Chapter</p>
+                        </div>
+                        <p class="text-gray-600">
+                            Led a team of 15 officers to organize technical workshops and coding competitions. Increased membership by 40% through outreach programs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteering Section -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-center mb-12">Volunteering</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Volunteer Card 1 -->
+                    <div class="activity-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg" alt="Coding Workshop" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">STEM Mentor</h3>
+                            <p class="text-gray-600 mb-4">Code for Good Initiative</p>
+                            <p class="text-gray-600">
+                                Teach programming fundamentals to underprivileged high school students through weekly workshops. Developed curriculum for Python basics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer Card 2 -->
+                    <div class="activity-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" alt="Community Service" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Tech Consultant</h3>
+                            <p class="text-gray-600 mb-4">Nonprofit Technology Network</p>
+                            <p class="text-gray-600">
+                                Help local nonprofits optimize their digital presence. Created website templates and CMS guides for organizations with limited budgets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hobbies Section -->
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-12">Personal Interests</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Hobby 1 -->
+                    <div class="activity-card bg-white rounded-lg overflow-hidden shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-mountain text-blue-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Hiking</h3>
+                        <p class="text-gray-600">
+                            Completed 50+ trails across national parks. Documenting my adventures through landscape photography.
+                        </p>
+                    </div>
+
+                    <!-- Hobby 2 -->
+                    <div class="activity-card bg-white rounded-lg overflow-hidden shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-book-open text-blue-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Reading</h3>
+                        <p class="text-gray-600">
+                            Avid reader of sci-fi and technology books. Maintain a book review blog with 5,000 monthly readers.
+                        </p>
+                    </div>
+
+                    <!-- Hobby 3 -->
+                    <div class="activity-card bg-white rounded-lg overflow-hidden shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chess text-blue-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Chess</h3>
+                        <p class="text-gray-600">
+                            Competitive chess player (1800 ELO). Organize monthly chess meetups in the local community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

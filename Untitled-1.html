@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Koushik Kolla - Professional Portfolio">
+  <title>Koushik Kolla Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional: Favicon and Open Graph tags -->
+  <!-- <link rel="icon" href="favicon.ico"> -->
+  <!-- <meta property="og:title" content="Koushik Kolla Portfolio"> -->
+  <!-- <meta property="og:description" content="Professional portfolio of Koushik Kolla"> -->
+  <!-- <meta property="og:image" content="link-to-image.jpg"> -->
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+  </header>
+  <main>
+    <section id="about">
+      <h1>Koushik Kolla</h1>
+      <p>Welcome to my professional portfolio website!</p>
+      <!-- Add more about content here -->
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- List your projects here -->
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" id="sendMessageBtn">Send Message</button>
+        <button type="button" id="downloadResumeBtn">Download Resume</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Koushik Kolla. All rights reserved.</p>
+  </footer>
+  <script src="style.js"></script>
+  <script>
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name')?.value.trim();
+      const email = document.getElementById('email')?.value.trim();
+      const message = document.getElementById('message')?.value.trim();
+      if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+      }
+      alert("Thank you for your message! I'll get back to you soon.");
+      this.reset();
+    });
+
+    document.getElementById('downloadResumeBtn')?.addEventListener('click', function() {
+      const link = document.createElement('a');
+      link.href = './assets/Koushik_Kolla_Resume.pdf';
+      link.download = 'Koushik_Kolla_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+</html>

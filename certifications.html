@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .cert-card {
+            transition: all 0.3s ease;
+        }
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Portfolio</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Home</a>
+                <a href="about.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">About</a>
+                <a href="portfolio.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Portfolio</a>
+                <a href="#" class="px-3 py-2 text-gray-600 hover:text-blue-500">Certifications</a>
+                <a href="activites.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Activities</a>
+                <a href="contact.html" class="px-3 py-2 text-gray-600 hover:text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Professional Certifications</h1>
+            <p class="text-xl text-gray-600">Validating my expertise and continuous learning</p>
+        </div>
+    </section>
+
+    <!-- Certifications Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certification 1 -->
+                <div class="cert-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Certified" class="h-24 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">RPA Automation Any Where </h3>
+                    <p class="text-gray-600 text-center mb-4">Amazon Web Services</p>
+                    <div class="flex justify-between text-sm text-gray-500">
+                        <span>Issued: Jun 2023</span>
+                        <span>Credential ID: XYZ12345</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-500 hover:text-blue-600 flex items-center justify-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="cert-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="Google Cloud Certified" class="h-24 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Google Cloud Professional</h3>
+                    <p class="text-gray-600 text-center mb-4">Google Cloud</p>
+                    <div class="flex justify-between text-sm text-gray-500">
+                        <span>Issued: Mar 2023</span>
+                        <span>Credential ID: ABC67890</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-500 hover:text-blue-600 flex items-center justify-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="cert-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.credly.com/images/1a9f4d0d-40b3-41a1-a142-796c64896cf1/image.png" alt="Microsoft Certified" class="h-24 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Microsoft Certified: Azure Administrator</h3>
+                    <p class="text-gray-600 text-center mb-4">Microsoft</p>
+                    <div class="flex justify-between text-sm text-gray-500">
+                        <span>Issued: Jan 2023</span>
+                        <span>Credential ID: DEF45678</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-500 hover:text-blue-600 flex items-center justify-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="cert-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.credly.com/images/5d6c4e3a-4b8b-4a5b-9b3a-5e8e9b9b9b9b/image.png" alt="React Certified" class="h-24 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">React Professional Certification</h3>
+                    <p class="text-gray-600 text-center mb-4">Meta</p>
+                    <div class="flex justify-between text-sm text-gray-500">
+                        <span>Issued: Nov 2022</span>
+                        <span>Credential ID: GHI90123</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-500 hover:text-blue-600 flex items-center justify-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="cert-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.credly.com/images/5d6c4e3a-4b8b-4a5b-9b3a-5e8e9b9b9b9b/image.png" alt="Node.js Certified" class="h-24 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Node.js Services Developer</h3>
+                    <p class="text-gray-600 text-center mb-4">OpenJS Foundation</p>
+                    <div class="flex justify-between text-sm text-gray-500">
+                        <span>Issued: Sep 2022</span>
+                        <span>Credential ID: JKL34567</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-500 hover:text-blue-600 flex items-center justify-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 6 -->
+                <div class="cert-card bg-white rounded-lg overflow-hidden shadow-md p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.credly.com/images/5d6c4e3a-4b8b-4a5b-9b3a-5e8e9b9b9b9b/image.png" alt="Security Certified" class="h-24 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Certified Information Security Professional</h3>
+                    <p class="text-gray-600 text-center mb-4">(ISC)²</p>
+                    <div class="flex justify-between text-sm text-gray-500">
+                        <span>Issued: Jul 2022</span>
+                        <span>Credential ID: MNO78901</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-blue-500 hover:text-blue-600 flex items-center justify-center">
+                            View Credential <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+[create_file for 'certifications.html'] Result:
+
+The content was successfully saved to certifications.html.
+
+<environment_details>
+# VSCode Visible Files
+contact.html
+
+# VSCode Open Tabs
+index.html
+about.html
+portfolio.html
+contact.html
+
+# Actively Running Terminals
+## Original command: `python3 -m http.server 8000`
+</environment_details>
